@@ -1,1 +1,165 @@
-Initial Commit.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="BiGym: A Demo-Driven Mobile Bi-Manual Manipulation Benchmark"
+          name="description">
+    <meta content="BiGym, Bi-Manual Manipulation, Mobile Manipulation, Benchmark" name="keywords">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>BiGym: A Demo-Driven Mobile Bi-Manual Manipulation Benchmark</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-PYVRSFMDRL');
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
+
+    <link href="./static/css/bulma.min.css" rel="stylesheet">
+    <link href="./static/css/bulma-carousel.min.css" rel="stylesheet">
+    <link href="./static/css/bulma-slider.min.css" rel="stylesheet">
+    <link href="./static/css/fontawesome.all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+          rel="stylesheet">
+    <link href="./static/css/index.css" rel="stylesheet">
+    <link href="./static/images/favicon.png" rel="icon">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-1 publication-title">BiGym: A Demo-Driven Mobile Bi-Manual Manipulation
+                        Benchmark</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero is-light is-small">
+    <div class="hero-body">
+        <div class="container">
+            <div class="carousel results-carousel" id="results-carousel">
+                <div class="item item-dishwasher-load-cups">
+                    <video autoplay controls height="100%" id="dishwasher-load-cups" loop muted playsinline poster="">
+                        <source src="./static/videos/dishwasher-load-cups.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-dishwasher-open">
+                    <video autoplay controls height="100%" id="dishwasher-open" loop muted playsinline poster="">
+                        <source src="./static/videos/dishwasher-open.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-flip-cup">
+                    <video autoplay controls height="100%" id="flip-cup" loop muted playsinline poster="">
+                        <source src="./static/videos/flip-cup.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-remove-sandwich">
+                    <video autoplay controls height="100%" id="remove-sandwich" loop muted playsinline poster="">
+                        <source src="./static/videos/remove-sandwich.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-take-cups">
+                    <video autoplay controls height="100%" id="take-cups" loop muted playsinline poster="">
+                        <source src="./static/videos/take-cups.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-groceries-store-upper">
+                    <video autoplay controls height="100%" id="groceries-store-upper" loop muted playsinline poster="">
+                        <source src="./static/videos/groceries-store-upper.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        We introduce BiGym, a new benchmark and learning environment for mobile bi-manual demo-driven
+                        robotic manipulation.
+                    </p>
+                    <p>
+                        BiGym features 40 diverse tasks set in home environments, ranging from simple target reaching to
+                        complex kitchen cleaning.
+                        To capture the real-world performance accurately, we provide human-collected demonstrations for
+                        each task, reflecting the diverse modalities found in real-world robot trajectories.
+                        BiGym supports a variety of observations, including proprioceptive data and visual inputs such
+                        as RGB, and depth from 3 camera views.
+                    </p>
+                    <p>
+                        To validate the usability of BiGym, we thoroughly benchmark the state-of-the-art imitation
+                        learning algorithms and demo-driven reinforcement learning algorithms within the environment and
+                        discuss the future opportunities.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--/ Abstract. -->
+
+        <!-- Paper video. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Video</h2>
+                <div class="publication-video">
+                    <iframe allow="autoplay; encrypted-media" allowfullscreen
+                            frameborder="0"
+                            src="https://www.youtube.com/embed/jFhhPkFngwk?rel=0&amp;showinfo=0"></iframe>
+                </div>
+            </div>
+        </div>
+        <!--/ Paper video. -->
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="columns is-centered">
+        <div class="column is-8">
+            <div class="content">
+                <p>
+                    Template based on <a href="https://github.com/nerfies/nerfies.github.io">nerfies</a> website.
+                    This website is licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/"
+                                                        rel="license">Creative Commons Attribution-ShareAlike 4.0
+                    International License</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+</body>
+</html>
