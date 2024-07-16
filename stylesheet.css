@@ -133,3 +133,10 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+
+hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, black, white);
+    margin: 0px 0;
+}
