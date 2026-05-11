@@ -1,0 +1,12 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: check-yaml
+      - id: end-of-file-fixer
+        exclude: '(\.(pdf|gif|mp4|mov|png|jpe?g|ico)$|^bigym/static/.*(\.min\.(js|css)|\.map\.txt)$)'
+      - id: trailing-whitespace
+        exclude: '(\.(pdf|gif|mp4|mov|png|jpe?g|ico)$|^bigym/static/.*(\.min\.(js|css)|\.map\.txt)$)'
+      - id: check-merge-conflict
+      - id: check-added-large-files
+        args: ['--maxkb=12000']
